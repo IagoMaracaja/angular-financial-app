@@ -7,6 +7,7 @@ export class Entry {
         public description?: string,
         public type?: string,
         public amount?: string,
+        public date?: string,
         public paid?: boolean,
         public categoryId?: number,
         public category?: Category
@@ -17,7 +18,7 @@ export class Entry {
         revenue: 'Receita'
     }
 
-    get paidText (): String {
+    get paidText(): String {
         return this.paid? 'Pago' : 'Pendente';
     }
 }
